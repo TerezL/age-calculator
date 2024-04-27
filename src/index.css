@@ -1,0 +1,156 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 86%);
+}
+
+.container {
+  background-color: hsl(0, 0%, 94%);
+  padding: 1.5rem;
+  border-radius: 10px 10px 80px 10px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+input {
+  margin-right: 1rem;
+  background-color: hsl(0, 0%, 94%);
+  border-width: 1px;
+  border-color: hsl(0, 0%, 86%);
+  border-style: solid;
+  border-radius: 5px;
+  font-family: "Poppins-Bold";
+  padding: 0.5rem;
+}
+
+input:focus {
+  border-color: hsl(0, 0%, 8%);
+  border-style: solid;
+  border-width: 1px;
+}
+
+h2 {
+  margin-right: 2rem;
+  font-size: 12px;
+}
+
+.label {
+  
+  font-family: "Poppins-Reg";
+}
+
+img {
+  width: 50%;
+  
+}
+
+.comma {
+  color: hsl(259, 100%, 65%);
+}
+
+hr {
+      
+      height: 2px;
+      width: 80%;
+  }
+
+
+.output {
+  font-family: "Poppins-ExtraBoldItalic";
+  font-size: 150px;
+  padding-top: 1rem;
+}
+
+.submit {
+  position: relative;
+  padding: 1rem;
+  
+}
+hr {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 40%;
+  height: 2px;
+  width: 85;
+
+}
+
+button {
+      background-color: hsl(259, 100%, 65%);
+      border-radius: 50%;
+      width: 70px;
+      aspect-ratio: 1 / 1;
+      border: none;
+      outline: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      position:absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%); 
+  }
+
+button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+@media (min-width: 660px) {
+  button {
+    
+            left: auto;
+            right: 0;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+  .container {
+      width: 60%;
+      height: 65vh;
+  }
+  input{
+    width: 70px;
+  }
+  .submit{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .comma{
+    font-size: 50px;
+  }
+  h1{
+    font-size: 50px;
+  }
+}
+
+
+
+
+@font-face {
+  font-family: Poppins-Reg;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins-ExtraBold;
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+}
+@font-face {
+  font-family: Poppins-ExtraBoldItalic;
+  src: url("./assets/fonts/Poppins-ExtraBoldItalic.ttf");
+}
